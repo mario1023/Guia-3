@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hv12.ejercicio_1_temporizador.MainActivity">
+
+    <TextView
+        android:id="@+id/lblContador"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1min" />
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lblContador"
+        android:text="Iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtCantidadSegundos"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtCantidadSegundos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-115dp"
+        android:text="Ingreses cantidad en segudos/default 60s" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="350dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="179dp" />
+
+    <TextView
+        android:id="@+id/txtPorcentaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:text="0%"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
